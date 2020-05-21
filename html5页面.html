@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <title>html5测试页面</title>
+
+    <!--内嵌style-->
+    <style type="text/css">
+        a {
+            text-decoration: none;
+        }
+        h3 {
+            color: grey;
+        }
+        .size {
+            font-size: 30px;
+            /* 首行缩进 */
+            text-indent: 2em;
+        }
+        .blue {
+            color: blue;
+        }
+        table,th,td {
+            border: 1px solid pink;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+    <!--外部style-->
+    <link rel="stylesheet" href="mystyle.css">
+
+    <!--base标签描述了基本的链接地址，该标签作为HTML文档中所有的链接标签的默认链接-->
+    <base href="http://www.runoob.com" target="_blank">
+
+</head>
+
+<body>
+
+    <!-- 排版标签 -->
+    <h4 style="color: red;">4号标题</h4>
+
+    <div class="blue size">
+        <p>这是一个在 div 元素中的段落。</p>
+    </div>
+
+    <p>苹果是 <span style="color:red">红色</span> 的。</p>
+
+    <!-- 图像标签  -->
+    <img src="/images/logo.png" alt="logo" title="logo"/>
+
+    <!-- 表格标签 -->
+    <table align="center" width="500" hight="100" >
+        <caption>
+            <h3>表格信息</h3>
+        </caption>
+        <tr>
+            <th>表头1</th>
+            <th>表头2</th>
+            <th>表头3</th>
+        </tr>
+        <tr>
+            <td colspan="2">内容1</td>
+            <td><a href="#">内容3</a></td>
+        </tr>
+        <tr>
+            <td>内容1</td>
+            <td>内容2</td>
+            <td>内容3</td>
+        </tr>
+    </table>
+
+    <!-- 列表标签 -->
+    <ol>
+        <li>有序列表1</li>
+        <li>有序列表2</li>
+        <li>有序列表3</li>
+    </ol>
+
+    <ul>
+        <li>无序列表1</li>
+        <li>无序列表2</li>
+        <li>无序列表3</li>
+    </ul>
+
+    <dl>
+        <dt>自定义列表</dt>
+        <dd>这是一个自定义列表1</dd>
+        <dd>这是一个自定义列表2</dd>
+        <dd>这是一个自定义列表3</dd>
+    </dl>
+
+    <!-- 表单标签 -->
+    <form action="" method="get">
+        
+        <label for='name'>用户名：</label>
+        <input id='name' type="text" name="username" placeholder="请输入用户名"/><br/>
+
+        密码：
+            <input type="password" name="pwd" placeholder="请输入密码" style="margin-top: 20px;"/><br/>
+
+        <input type="button" value="免费获取验证码"/><br/>
+
+        性别：
+            <input type="radio" name="sex" checked="checked"/>男 
+            <input type="radio" name="sex"/>女
+            <br/>
+
+        爱好：
+            <input type="checkbox" name="like"/>足球
+            <input type="checkbox" name="like"/>篮球
+            <input type="checkbox" name="like"/>排球
+            <br/>
+
+        所在地：
+            <select>
+                <option>--请选择所在地--</option>
+                <option>西安</option>
+                <option>咸阳</option>
+                <option>宝鸡</option>
+            </select><br/>
+
+        <input type="file"/><br/>
+
+        用户留言：
+            <textarea cols="10" rows="3"></textarea><br/>
+
+        <input type="submit" value="登录"/>
+        <input type="reset" value="重置"/>
+    </form>
+
+</body>
+
+</html>
