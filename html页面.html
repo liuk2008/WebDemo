@@ -7,32 +7,24 @@
 
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
 
-    <title>html5测试页面</title>
+    <title>html测试页面</title>
 
     <!--内嵌style-->
     <style type="text/css">
+        /* 去掉链接下划线 */
         a {
             text-decoration: none;
         }
-        h3 {
-            color: grey;
-        }
-        .size {
-            font-size: 30px;
-            /* 首行缩进 */
-            text-indent: 2em;
-        }
-        .blue {
-            color: blue;
-        }
+        /* 设置表格属性 */
         table,th,td {
             border: 1px solid pink;
-            border-collapse: collapse;
+            /* 合并边框 */
+            border-collapse: collapse; 
             text-align: center;
         }
     </style>
     <!--外部style-->
-    <link rel="stylesheet" href="mystyle.css">
+    <!-- <link rel="stylesheet" href="mystyle.css"> -->
 
     <!--base标签描述了基本的链接地址，该标签作为HTML文档中所有的链接标签的默认链接-->
     <base href="http://www.runoob.com" target="_blank">
@@ -44,8 +36,9 @@
     <!-- 排版标签 -->
     <h4 style="color: red;">4号标题</h4>
 
-    <div class="blue size">
-        <p>这是一个在 div 元素中的段落。</p>
+    <div>
+         <!-- 首行缩进 -->
+        <p style="text-indent: 2em; font-size: 15px;">这是一个在 div 元素中的段落。</p>
     </div>
 
     <p>苹果是 <span style="color:red">红色</span> 的。</p>
@@ -55,8 +48,9 @@
 
     <!-- 表格标签 -->
     <table align="center" width="500" hight="100" >
+        <!-- 定义表格标题 -->
         <caption>
-            <h3>表格信息</h3>
+            <h3 style="color: grey;">表格信息</h3>
         </caption>
         <tr>
             <th>表头1</th>
@@ -96,7 +90,7 @@
 
     <!-- 表单标签 -->
     <form action="" method="get">
-        
+        <!-- 用于绑定一个表单元素，当点击label标签时，绑定的表单元素获取焦点 -->
         <label for='name'>用户名：</label>
         <input id='name' type="text" name="username" placeholder="请输入用户名"/><br/>
 
@@ -131,6 +125,7 @@
 
         <input type="submit" value="登录"/>
         <input type="reset" value="重置"/>
+        
     </form>
 
 </body>
