@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css样式</title>
+    <style>
+        /* 清除默认内外边距 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 清除列表样式 */
+        li {
+            list-style: none;
+        }
+        
+        /* 基础选择器 */
+        /* 标签选择器 */
+        h3 {
+            color: green;
+        }
+        /* 类选择器 */
+        .red {
+            color: red;
+        }
+        /* id选择器 */
+        #blue {
+            color: blue;
+        }
+
+        /* 复合选择器 */
+        /* 后代选择器 */
+        .list ul li {
+            color: grey;
+        }
+        /* 子元素选择器 */
+        .div>strong {
+            color: pink;
+        }
+        /* 交集选择器 */
+        p.grey {
+            color: gold;
+        }
+        /* 并集选择器 */
+        span,
+        strong {
+            color: red;
+        }
+        /* 链接伪类选择器 */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover {
+            color: orange;
+        }
+        a:active {
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- 基础选择器 -->
+    <h3>3号标题</h3>
+    
+    <div class="red">
+        <p>类选择器样式</p>
+    </div>
+
+    <p id="blue">id选择器样式</p>
+
+    <br>
+
+    <!-- 复合选择器 -->
+    <div class="list">
+        <ul>
+            <li>后代迭代器1</li>
+            <li>后代迭代器2</li>
+        </ul>
+    </div>
+
+    <div class="div">
+        <strong>子元素选择器样式1</strong>
+        <strong>子元素选择器样式2</strong>
+    </div>
+
+    <p class="grey">交集选择器样式</p>
+
+    <strong>并集选择器样式</strong>
+    <span>并集选择器样式</span>
+
+    <br>
+
+    <a href="#">小米手机</a>
+    <a href="http://www.sina.com">大米手机</a>
+
+</body>
+</html>

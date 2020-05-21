@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css样式</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        p {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: red;
+            color: white;
+            margin: 10px 0;
+            /* 设置圆角 */
+            border-radius: 15px;
+            /* 水平阴影，垂直阴影，模糊距离，阴影尺寸，阴影颜色，内/外阴影 */
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0,0.2);
+        }
+
+        /* 新闻列表 */
+        .new {
+            width: 310px;
+            height: 150px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .new h2 {
+            font-size: 18px;
+            border-bottom: 1px solid #ccc;
+            padding: 5px 0;
+            margin-bottom: 10px;
+        }
+
+        .new ul li {
+            height: 30px;
+            border-bottom: 1px dashed #ccc ;
+            line-height: 30px;
+        }
+
+        .new a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .new a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+       /* 标签显示模式 */
+        .nav a {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            background-color: pink;
+            color: white;
+            text-decoration: none;
+            /* 设置文本水平居中 */
+            text-align: center;
+            /* 行高等于高度，可以让单行文本垂直居中 */
+            line-height: 30px;
+        }
+
+        .nav a:hover {
+            background-color: orange;
+        }
+
+        /* 盒子模型 */
+        .father {
+            width: 150px;
+            height: 150px;
+            margin: 10px 0 20px;
+            background-color: purple;
+            /* 保证嵌套块元素垂直外边距正常显示*/
+            overflow: hidden;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            background-color: pink;
+        }
+
+        /* 浮动（float） */
+        .box {
+            width: 1226px;
+            height: 315px;
+            margin: 0 auto;
+            background-color: red;
+        }
+
+        .left {
+            float: left;
+            width: 234px;
+            height: 315px;
+            background-color: purple;
+        }
+
+        .right {
+            float: right;
+            width: 992px;
+            height: 315px;
+            background-color: pink;
+        }
+
+        .right li {
+            float: left;
+            width: 234px;
+            height: 150px;
+            margin-left: 14px;
+            margin-bottom: 15px;
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>新人福利</p>
+
+    <div class="new">
+        <h2>最新文章</h2>
+        <!-- 快捷键：ul>li*3>a -->
+        <ul>
+            <li><a href="">Python学习</a></li>
+            <li><a href="">Java学习</a></li>
+            <li><a href="">Android学习</a></li>
+        </ul>
+    </div>
+
+    <!-- 标签显示模式 -->
+    <div class="nav">
+        <a href="#">体育</a>
+        <a href="#">娱乐</a>
+        <a href="#">汽车</a>
+    </div>
+
+    <!-- 盒子模型 -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+
+    <!-- 浮动（float） -->
+    <div class="box">
+        <div class="left"></div>
+        <ul class="right">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+    </div>
+
+</body>
+</html>
